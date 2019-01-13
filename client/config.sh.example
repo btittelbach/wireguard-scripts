@@ -1,0 +1,11 @@
+
+local REMOTEHOST=myrouter.homedomain.at
+local REMOTEPORT=51820
+local WGIF=wg0
+local WGREMOTEGW4=192.168.42.1
+local WGREMOTEGW6=2001:400:2323:42::1
+local WGMYIPNETS=(192.168.42.12/24 2001:400:2323:42:12/64)
+local MY_PRIV_KEY_FILE=./private.key 
+local OUR_PRESHARED_KEY_FILE=./psk.key
+local REMOTE_PUB_KEY_STRING='fooblafooblafooblafooblafoobla'
+
