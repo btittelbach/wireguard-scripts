@@ -45,9 +45,9 @@ case $1 in
 ;;
 
 (stop)
-	ip link set $WGIF down
 	[[ -n $REMOTE_HOST_4 && -n $CUR_DEFAULT_ROUTE_4 ]] && ip route del $REMOTE_HOST_4 $CUR_DEFAULT_ROUTE_4 
 	[[ -n $REMOTE_HOST_6 && -n $CUR_DEFAULT_ROUTE_6 ]] && ip route del $REMOTE_HOST_6 $CUR_DEFAULT_ROUTE_6 
+	ip link set $WGIF down
 	ip link del $WGIF
 
 ;;
